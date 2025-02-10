@@ -11,7 +11,7 @@ const PORT = 5011;
 app.use(express.static(path.join(__dirname, "build")))
 
 
-app.get("/",(req,res)=>{
+app.get("/ismail",(req,res)=>{
     try {
         res.status(200).json({message:"Hello Mohammed!"})
     } catch (error) {
